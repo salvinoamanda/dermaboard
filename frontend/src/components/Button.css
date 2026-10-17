@@ -1,0 +1,56 @@
+.btn {
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #676767;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn.primary {
+    background-color: #40BF66;
+    border: 1px solid #265939;
+    color: #FFFFFF;
+}
+
+.btn.secondary {
+    background-color: #F9FFFB;
+    border: 1px solid #D4E4D9;
+}
+
+.btn.outline {
+    background-color: transparent;
+    border: 1px solid #C07404;
+    color: #C07404;
+}
+
+.btn.danger {
+    background-color: #C0392B;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn.small {
+    padding: 10px 20px;
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.btn.large {
+    padding: 10px 40px;
+    font-size: 14px;
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.btn .icon {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+.btn:has(.icon) {
+    padding: 8px 14px;
+    justify-content: space-between;
+    gap: 20px;
+}

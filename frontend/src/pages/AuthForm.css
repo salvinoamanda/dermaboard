@@ -1,0 +1,107 @@
+.auth-form-panel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.auth-form-panel .page-header.left h3 {
+    margin-left: 5px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #C07404;
+}
+
+.auth-form-panel form {
+    padding: 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form-panel .input-error {
+    font-size: clamp(11px, 2vw, 12px);
+    color: #c0392b;
+}
+
+.auth-form-panel .input-success {
+    font-size: clamp(11px, 2vw, 12px);
+    color: #40BF66;
+}
+
+.auth-form-panel form > .btn {
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.form-actions {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    display: flex;
+    padding: 3px;
+}
+
+.form-actions .btn {
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: #676767;
+    flex: 1;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions .btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-actions .btn.active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.benefits-panel {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 20px;
+}
+
+.benefits-panel .page-header.left h4 {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+.benefits-panel ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.benefits-panel li {
+    font-size: clamp(12px, 2.5vw, 16px);
+    transition: transform 0.2s ease;
+    transform-origin: left center;
+}
+
+.benefits-panel li:hover {
+    transform: scale(1.05);
+}
+
+.auth-form-panel p {
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.auth-form-panel span {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    color: #265939;}
+
+@media (max-width: 500px) {
+    .auth-form-panel {
+        padding: 12px;
+    }
+
+    .auth-form-panel form {
+        padding: 0 8px;
+    }
+}

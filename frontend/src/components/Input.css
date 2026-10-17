@@ -1,0 +1,84 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+}
+
+.input label {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    color: #265939;
+}
+
+.input .field {
+    background-color: #F9FFFB;
+    border: 1px solid #D4E4D9;
+    border-radius: 10px;
+}
+
+.input input {
+    width: 100%;
+    background-color: #F9FFFB;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #676767;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.panel:focus-within {
+    box-shadow: 0 0 8px 2px rgba(212, 228, 217, 0.5);
+}
+
+.input input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #F9FFFB inset;
+}
+
+.input .input-row {
+    display: flex;
+    align-items: center;
+}
+
+.input .input-row .btn {
+    border: none;
+    background: none;
+    padding: 0 14px;
+    font-size: 20px;
+    color: #676767;
+}
+
+.input .input-row .btn:hover {
+    color: #40BF66;
+}
+
+.input .field textarea {
+    width: 100%;
+    background-color: #F5E6C4;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-family: inherit;
+    resize: vertical;
+    display: block;
+}
+
+.input .field textarea::placeholder {
+    color: #3E2F1C;
+}
+
+.input .field textarea:focus {
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    .input input {
+        padding: 10px 14px;
+    }
+}

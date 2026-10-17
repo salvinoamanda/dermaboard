@@ -1,0 +1,44 @@
+.panel {
+    border-radius: 8px;
+}
+
+.panel-theme-light {
+    background-color: #FFFFFF;
+}
+
+.panel-theme-dark {
+    background-color: #DBE6DE;
+}
+
+.panel-theme-alert {
+    background-color: #E6CDA8;
+}
+
+.panel-border-all {
+    border: 2px solid #D4E4D9;
+}
+
+.panel-border-horizontal {
+    border-top: 3px solid #D4E4D9;
+    border-bottom: 3px solid #D4E4D9;
+}
+
+.panel-border-none {
+    border: none;
+}
+
+.panel-shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.panel-hover {
+    transition: transform 0.2s ease;
+}
+
+.panel-hover:hover {
+    transform: scale(1.04);
+}
+
+.panel-clickable {
+    cursor: pointer;
+}

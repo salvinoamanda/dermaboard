@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2FAF5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #676767;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body, #root {
+    min-height: 100vh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    flex: 1;
+}
+
+.input-error {
+    font-size: clamp(11px, 2vw, 12px);
+    color: #C0392B;
+}

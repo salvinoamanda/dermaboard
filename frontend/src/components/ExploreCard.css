@@ -1,0 +1,59 @@
+.explore-card {
+    max-width: 380px;
+    min-height: 280px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-card .header {
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    padding: 0 20px 30px;
+    margin: 0 -40px 40px;
+    border-bottom: 4px solid;
+}
+
+.explore-card .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.explore-card .header h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 3vw, 20px);
+  color: #265939;
+  text-align: center;
+}
+
+.explore-card .description {
+  margin-top: 12px;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+@media (max-width: 500px) {
+    .explore-card {
+        padding: 25px 25px;
+        min-height: auto;
+    }
+
+    .explore-card .header {
+        gap: 15px;
+        margin: 0 -25px 25px;
+        padding: 0 25px 20px;
+    }
+
+    .explore-card .icon {
+        width: 45px;
+        height: 45px;
+    }
+}

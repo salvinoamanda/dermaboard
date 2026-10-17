@@ -1,0 +1,46 @@
+.users-list {
+    max-width: 1400px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F9FFFB;
+    border: 1px solid #D4E4D9;
+    border-radius: 5px;
+}
+
+.users-list .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+}
+
+.users-list .user-item small {
+    overflow-wrap: anywhere;
+}
+
+.users-list .user-item .btn.outline {
+    border: none;
+    background: none;
+    padding: 6px;
+    font-size: 22px;
+    color: #676767;
+}
+
+.users-list .user-item .btn.outline:hover {
+    color: #C0392B;
+}
+
+.users-list .user-item p {
+    margin: 0;
+    font-size: clamp(13px, 1.6vw, 15px);
+}
+
+.users-list .user-item small {
+    font-size: clamp(11px, 1.4vw, 13px);
+}
+
+.users-list .user-item > div {
+    min-width: 0;
+}

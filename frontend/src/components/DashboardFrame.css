@@ -1,0 +1,8 @@
+.dashboard-frame {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    aspect-ratio: 600 / 373.5;
+    margin: 0 auto;
+    border: none;
+}

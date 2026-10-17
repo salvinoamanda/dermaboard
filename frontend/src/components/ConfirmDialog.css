@@ -1,0 +1,33 @@
+.confirm-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 39, 30, 0.5);
+    z-index: 300;
+}
+
+.confirm-overlay .confirm-dialog {
+    width: 90%;
+    max-width: 360px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.confirm-overlay .confirm-dialog .page-header.left h4 {
+    border-bottom: 1px solid #C07404;
+    margin-left: 0;
+}
+
+.confirm-overlay .confirm-dialog .confirm-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.confirm-overlay .confirm-dialog p {
+    font-size: clamp(12px, 2vw, 14px);
+}

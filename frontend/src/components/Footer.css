@@ -1,0 +1,12 @@
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: clamp(12px, 2vw, 14px);
+    max-width: 400px;
+    margin: 60px auto 0;
+}

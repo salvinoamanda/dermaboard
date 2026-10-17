@@ -1,0 +1,48 @@
+.user-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    font-size: 26px;
+    background-color: transparent;
+    color: #40BF66;
+}
+
+.user-menu-panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    z-index: 100;
+}
+
+.user-menu-panel .btn {
+    width: 100%;
+}
+
+.user-menu-panel .btn.outline {
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.user-menu-panel .btn.danger {
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.user-menu-panel .btn.outline:hover {
+    background-color: rgba(26, 39, 30, 0.08);
+}
+
+.panel.user-icon {
+    transition: transform 0.2s ease;
+}
+
+.panel.user-icon:hover {
+    transform: scale(1.25);
+}

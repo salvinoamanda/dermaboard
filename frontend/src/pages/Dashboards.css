@@ -1,0 +1,19 @@
+.dashboard-panels {
+    max-width: 1400px;
+    min-height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F9FFFB;
+    border: 1px solid #D4E4D9;
+}
+
+.alert-box-wrapper .references li span.ref-author-dashboards {
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .dashboard-panels {
+        min-height: auto;
+        padding: 10px;
+    }
+}

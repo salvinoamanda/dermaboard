@@ -1,0 +1,98 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container,
+.navbar .container-access {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #D4E4D9;
+    background-color: #FFFFFF;
+}
+
+.navbar .container .left,
+.navbar .container-access .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .derma {
+    color: #40BF66;
+    font-weight: 600;
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.navbar .board {
+    color: #C07404;
+    font-weight: 600;
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.navbar .container .center {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .link {
+    text-decoration: none;
+    color: #676767;
+    font-weight: 400;
+    font-size: clamp(13px, 2vw, 16px);
+}
+
+.navbar .link:hover {
+    color: #40BF66;
+    cursor: pointer;
+}
+
+.navbar .link.active {
+    border-bottom: 2px solid #676767;
+    pointer-events: none;
+}
+
+.navbar .container .right,
+.navbar .container-access .right {
+    display: flex;
+    padding: 0px 20px;
+}
+
+@media (max-width: 900px) {
+    .navbar .container,
+    .navbar .container-access {
+        flex-wrap: wrap;
+    }
+
+    .navbar .container .center {
+        border-top: 2px solid #D4E4D9;
+        background-color: #D9F2E1;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        order: 1;
+        padding: 8px;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar .container .center {
+        gap: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar .container .center {
+        gap: 20px;
+    }
+}
